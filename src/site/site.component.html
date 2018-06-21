@@ -1,10 +1,23 @@
 
-<section class="sitecomponent">
-    <ul>
-        <li *ngFor="let dataset of data">
+<section >
+    <!-- <ul class="sitecomponent">
+        <li *ngFor="let dataset of data" >
             {{dataset.text}}
         </li>
-    </ul>
+    </ul> -->
+    <div *ngFor="let dataset of data" class="sitecomponent " >
+        <div *ngIf="dataset.color == 'lightblue'" class="tileblue">
+            <div class="tile-text">{{dataset.text}}</div>
+        </div>
+        <div *ngIf="dataset.color == 'lightgreen'" class="tilegreen">
+            <div class="tile-text">{{dataset.text}}</div>
+        </div>
+        <div *ngIf="dataset.color == 'lightpink'" class="tileorange">
+            <div class="tile-text">{{dataset.text}}</div>
+        </div>
+       
+    </div>
+    
 </section>
 
 

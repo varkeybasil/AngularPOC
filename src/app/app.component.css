@@ -1,10 +1,12 @@
-.homecomponent
+/* .parent
 {
     background-color:#fafafa;
     background-size: cover;
     height: 100vh;
     
-}
+} */
 *{
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #ecf0f1;
 }
