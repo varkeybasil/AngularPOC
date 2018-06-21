@@ -1,6 +1,8 @@
+
 import { Component } from '@angular/core';
 import {TileService} from "../tile.service";
 import { Http } from '@angular/http';
+
 
 @Component({
     selector: 'app-site',
@@ -8,11 +10,17 @@ import { Http } from '@angular/http';
     styleUrls: ['./site.component.css'],
     providers:[]
   })
+
   export class SiteComponent {
-    data :any;
-    constructor( private tileservice :TileService)
+    data :any[];
+    constructor( http: Http)
     {
-     this.data = tileservice.getData();
+      http.get("assets/tiles.json").subscribe(response=>{
+        console.log(response.json());
+        this.data =response.json();
+      })
+    //  this.data = tileservice.getData();
+    //  console.log(this.data);
      
     }
     requestReceived = "Pump Request Received";
@@ -25,4 +33,4 @@ import { Http } from '@angular/http';
     
   }
 
-  
+

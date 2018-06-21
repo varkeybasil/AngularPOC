@@ -1,10 +1,10 @@
+
 <section class="sitecomponent">
-   <p>{{requestReceived}}</p>
-   <p>{{reuestAccepted}}</p>
-   <p>{{transcationTimeOut}}</p>
-   <p>{{transactionInitiated}}</p>
-   <p>{{transactionFinalized}}</p>
-   <p>{{requestReceived}}</p>
-   <p>{{transactionVoids}}</p>
-   <p>{{data}}</p>
+    <ul>
+        <li *ngFor="let dataset of data">
+            {{dataset.text}}
+        </li>
+    </ul>
 </section>
+
+

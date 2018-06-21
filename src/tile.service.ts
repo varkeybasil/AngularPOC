@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
+
 @Injectable()
 export class TileService {
 
@@ -18,7 +19,7 @@ export class TileService {
   getData() {
     let headers = new Headers();
     //this.createHeader(headers);
-    return this.http.get("./tiles.json", {
+    return this.http.get("assets/tiles.json", {
       headers: headers
     }).map(this.extractData).catch(this.handleError);
     //return "Hi";
