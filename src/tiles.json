@@ -1,0 +1,38 @@
+[
+  {
+    "text": "One",
+    "color": "lightblue"
+  
+  },
+  {
+    "text": "Two",
+    "color": "lightgreen"
+  },
+   {
+    "text": "Three",
+    "color": "lightblue"
+  
+  },
+  {
+    "text": "Four",
+    "color": "lightpink"
+  },
+    {
+    "text": "Five",
+    "color": "lightblue"
+  
+  },
+  {
+    "text": "Six",
+    "color": "lightgreen"
+  },
+   {
+    "text": "Seven",
+    "color": "lightpink"
+  
+  },
+  {
+    "text": "Eight",
+    "color": "lightgreen"
+  }
+]
